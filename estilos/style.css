@@ -14,12 +14,21 @@
 }
 
 :root {
+  /*Tema Claro*/
   --fundo-principal: #FFF4F0;
   --texto: #4A3A36;
   --texto-inverso: #FFFFFF;
   --destaque: #fc796d;
   --destaque-inverso: #FFFFFF;
   --fundo-card: #FFFFFF;
+
+  /*Tema Escuro*/
+  --escuro-fundo-principal: #312723;
+  --escuro-texto: #ffffff;
+  --escuro-texto-inverso: #4A3A36; 
+  --escuro-destaque: #fc796d;
+  --escuro-destaque-inverso: #ffffff;
+  --escuro-fundo-card: #55433c;
 }
 
 body {
@@ -27,6 +36,15 @@ body {
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+}
+
+body.escuro {
+  --fundo-principal: var(--escuro-fundo-principal);
+  --texto: var(--escuro-texto);
+  --texto-inverso: var(--escuro-texto-inverso);
+  --destaque: var(--escuro-destaque);
+  --destaque-inverso: var(--escuro-destaque-inverso);
+  --fundo-card: var(--escuro-fundo-card);
 }
 
 header {
@@ -306,7 +324,6 @@ footer a::after {
 footer a:hover::after {
   width: 100%;
 }
-
 
 @media screen and (min-width: 768px) {
 
