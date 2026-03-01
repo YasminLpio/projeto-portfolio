@@ -301,8 +301,13 @@ details.descricao p {
   text-indent: 30px;
 }
 
-div.projeto-info h3.titulo {
-  margin-left: 30px;
+div.projeto-info p {
+  text-indent: 30px;
+}
+
+div.projeto-info p.periodo {
+  text-indent: 0px;
+  padding-bottom: 8px;
 }
 
 footer {
